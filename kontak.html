@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Maliki Koncer - Kontak</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.png" alt="Logo Al Maliki Koncer" class="logo-img me-2">
+                <span>Al Maliki Koncer</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Informasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="program.html">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fasilitas.html">Fasilitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Hubungi Kami</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Kontak</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="contact-info-card">
+                        <div class="icon-box">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                        </div>
+                        <h4>Alamat</h4>
+                        <p>Jl. KH. Abd.Mu'iz Tr<br>Koncer Kidul, Bondowoso<br>Jawa Timur, Indonesia</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info-card">
+                        <div class="icon-box">
+                            <i class="fas fa-phone fa-2x text-primary"></i>
+                        </div>
+                        <h4>Telepon</h4>
+                        <p>
+                            <a href="tel:+62211234567" class="contact-link">+62 831-5214-2414</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info-card">
+                        <div class="icon-box">
+                            <i class="fas fa-envelope fa-2x text-primary"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p>
+                            <a href="mailto:pesantrenkoncer@gmail.com" class="contact-link">pesantrenkoncer@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-form-wrapper">
+                        <h2 class="section-title">Kirim Pesan</h2>
+                        <p class="lead mb-4">Ada pertanyaan? Silakan isi form di bawah ini.</p>
+                        <form id="contactForm" class="contact-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Nomor Telepon</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subjek</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Pesan</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="map-wrapper">
+                        <h2 class="section-title">Lokasi Kami</h2>
+                        <p class="lead mb-4">Kunjungi kami di lokasi berikut:</p>
+                        <div class="map-container position-relative rounded-4 overflow-hidden shadow-lg">
+                            <div class="ratio ratio-16x9">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.898470045047!2d113.8233!3d-7.9167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6d5e3e54e15b1%3A0x6d3015c0f0e9c0a0!2sPondok%20Pesantren%20Al%20Maliki%20Koncer!5e0!3m2!1sid!2sid!4v1648123456789!5m2!1sid!2sid" 
+                                    style="border:0;"
+                                    width="100%"
+                                    height="100%"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <div class="map-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" 
+                                 style="pointer-events: none;">
+                                <a href="https://maps.app.goo.gl/DqEFssNtu7e3zuCY6" 
+                                   target="_blank" 
+                                   class="btn btn-primary"
+                                   style="pointer-events: auto; background: rgba(13, 110, 253, 0.9);">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Buka di Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Pertanyaan Umum</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Bagaimana cara mendaftar di Pondok Pesantren Al Maliki Koncer?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Pendaftaran dapat dilakukan secara online melalui website kami atau langsung datang ke kantor pondok pesantren. Silakan hubungi kami untuk informasi lebih lanjut.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Apa saja persyaratan untuk menjadi santri?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Persyaratan umum meliputi: fotokopi ijazah terakhir, fotokopi KK, fotokopi akte kelahiran, pas foto, dan surat keterangan sehat. Persyaratan lengkap akan diberikan saat pendaftaran.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Apakah ada program beasiswa?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ya, kami menyediakan program beasiswa untuk santri berprestasi dan santri dari keluarga kurang mampu. Silakan hubungi bagian administrasi untuk informasi lebih lanjut.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Kontak Kami</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt me-2"></i> Jl. KH. Abd.Mu'iz Tr<br>
+                        <i class="fas fa-phone me-2"></i> (021) 1234-5678<br>
+                        <i class="fas fa-envelope me-2"></i> pesantrenkoncer@gmail.com
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Link Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html"><i class="fas fa-chevron-right me-2"></i>Beranda</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right me-2"></i>Informasi</a></li>
+                        <li><a href="program.html"><i class="fas fa-chevron-right me-2"></i>Program</a></li>
+                        <li><a href="fasilitas.html"><i class="fas fa-chevron-right me-2"></i>Fasilitas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Ikuti Kami</h5>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/pesantren.almaliki" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/almalikikoncer?igsh=Z3BlNDU3Y2xrdnRi" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@almalikitv" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Al Maliki Koncer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Theme JS -->
+    <script src="theme.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('scrolled');
+            }
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah terkirim. Kami akan segera menghubungi Anda.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
